@@ -1,0 +1,23 @@
+[2023-07-26T18:24:30.629-0300] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: LH_ED_GABRIELLEMUNIZ.write_second_db manual__2023-07-26T14:23:45.992019+00:00 [queued]>
+[2023-07-26T18:24:30.636-0300] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: LH_ED_GABRIELLEMUNIZ.write_second_db manual__2023-07-26T14:23:45.992019+00:00 [queued]>
+[2023-07-26T18:24:30.636-0300] {taskinstance.py:1308} INFO - Starting attempt 7 of 10
+[2023-07-26T18:24:30.655-0300] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): write_second_db> on 2023-07-26 14:23:45.992019+00:00
+[2023-07-26T18:24:30.659-0300] {standard_task_runner.py:57} INFO - Started process 15944 to run task
+[2023-07-26T18:24:30.663-0300] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'LH_ED_GABRIELLEMUNIZ', 'write_second_db', 'manual__2023-07-26T14:23:45.992019+00:00', '--job-id', '467', '--raw', '--subdir', 'DAGS_FOLDER/LH_ED_GABRIELLEMUNIZ.py', '--cfg-path', '/tmp/tmpilporzfd']
+[2023-07-26T18:24:30.663-0300] {standard_task_runner.py:85} INFO - Job 467: Subtask write_second_db
+[2023-07-26T18:24:30.708-0300] {task_command.py:410} INFO - Running <TaskInstance: LH_ED_GABRIELLEMUNIZ.write_second_db manual__2023-07-26T14:23:45.992019+00:00 [running]> on host ubuntu
+[2023-07-26T18:24:30.785-0300] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='gabi' AIRFLOW_CTX_DAG_ID='LH_ED_GABRIELLEMUNIZ' AIRFLOW_CTX_TASK_ID='write_second_db' AIRFLOW_CTX_EXECUTION_DATE='2023-07-26T14:23:45.992019+00:00' AIRFLOW_CTX_TRY_NUMBER='7' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-07-26T14:23:45.992019+00:00'
+[2023-07-26T18:24:30.821-0300] {logging_mixin.py:150} WARNING - /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/utils/context.py:313 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2023-07-26T18:24:31.033-0300] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py", line 109, in write_second_db
+    df = pd.read_csv(file_path)
+NameError: name 'file_path' is not defined. Did you mean: 'file_path_csv'?
+[2023-07-26T18:24:31.043-0300] {taskinstance.py:1345} INFO - Marking task as UP_FOR_RETRY. dag_id=LH_ED_GABRIELLEMUNIZ, task_id=write_second_db, execution_date=20230726T142345, start_date=20230726T212430, end_date=20230726T212431
+[2023-07-26T18:24:31.060-0300] {standard_task_runner.py:104} ERROR - Failed to execute job 467 for task write_second_db (name 'file_path' is not defined; 15944)
+[2023-07-26T18:24:31.075-0300] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-07-26T18:24:31.093-0300] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

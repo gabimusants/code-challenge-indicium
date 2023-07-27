@@ -1,0 +1,14 @@
+[2023-07-24T18:51:36.008-0300] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: LH_ED_GABRIELLEMUNIZ.extract_write_local scheduled__2023-07-24T20:20:00+00:00 [queued]>
+[2023-07-24T18:51:36.016-0300] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: LH_ED_GABRIELLEMUNIZ.extract_write_local scheduled__2023-07-24T20:20:00+00:00 [queued]>
+[2023-07-24T18:51:36.016-0300] {taskinstance.py:1308} INFO - Starting attempt 7 of 10
+[2023-07-24T18:51:36.038-0300] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): extract_write_local> on 2023-07-24 20:20:00+00:00
+[2023-07-24T18:51:36.042-0300] {standard_task_runner.py:57} INFO - Started process 20981 to run task
+[2023-07-24T18:51:36.045-0300] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'LH_ED_GABRIELLEMUNIZ', 'extract_write_local', 'scheduled__2023-07-24T20:20:00+00:00', '--job-id', '20', '--raw', '--subdir', 'DAGS_FOLDER/LH_ED_GABRIELLEMUNIZ.py', '--cfg-path', '/tmp/tmpgmmndxnn']
+[2023-07-24T18:51:36.046-0300] {standard_task_runner.py:85} INFO - Job 20: Subtask extract_write_local
+[2023-07-24T18:51:36.099-0300] {task_command.py:410} INFO - Running <TaskInstance: LH_ED_GABRIELLEMUNIZ.extract_write_local scheduled__2023-07-24T20:20:00+00:00 [running]> on host ubuntu
+[2023-07-24T18:51:36.178-0300] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='gabi' AIRFLOW_CTX_DAG_ID='LH_ED_GABRIELLEMUNIZ' AIRFLOW_CTX_TASK_ID='extract_write_local' AIRFLOW_CTX_EXECUTION_DATE='2023-07-24T20:20:00+00:00' AIRFLOW_CTX_TRY_NUMBER='7' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-07-24T20:20:00+00:00'
+[2023-07-24T18:51:36.188-0300] {logging_mixin.py:150} WARNING - /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/utils/context.py:313 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2023-07-24T18:51:36.203-0300] {python.py:183} INFO - Done. Returned value was: None
+[2023-07-24T18:51:36.208-0300] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=LH_ED_GABRIELLEMUNIZ, task_id=extract_write_local, execution_date=20230724T202000, start_date=20230724T215136, end_date=20230724T215136
+[2023-07-24T18:51:36.258-0300] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-07-24T18:51:36.274-0300] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

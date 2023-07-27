@@ -1,0 +1,32 @@
+[2023-07-26T00:16:33.505-0300] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: LH_ED_GABRIELLEMUNIZ.write_second_db scheduled__2023-07-25T13:45:00+00:00 [queued]>
+[2023-07-26T00:16:33.512-0300] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: LH_ED_GABRIELLEMUNIZ.write_second_db scheduled__2023-07-25T13:45:00+00:00 [queued]>
+[2023-07-26T00:16:33.512-0300] {taskinstance.py:1308} INFO - Starting attempt 92 of 94
+[2023-07-26T00:16:33.530-0300] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): write_second_db> on 2023-07-25 13:45:00+00:00
+[2023-07-26T00:16:33.534-0300] {standard_task_runner.py:57} INFO - Started process 204980 to run task
+[2023-07-26T00:16:33.538-0300] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'LH_ED_GABRIELLEMUNIZ', 'write_second_db', 'scheduled__2023-07-25T13:45:00+00:00', '--job-id', '367', '--raw', '--subdir', 'DAGS_FOLDER/LH_ED_GABRIELLEMUNIZ.py', '--cfg-path', '/tmp/tmpkka2gt17']
+[2023-07-26T00:16:33.539-0300] {standard_task_runner.py:85} INFO - Job 367: Subtask write_second_db
+[2023-07-26T00:16:33.595-0300] {task_command.py:410} INFO - Running <TaskInstance: LH_ED_GABRIELLEMUNIZ.write_second_db scheduled__2023-07-25T13:45:00+00:00 [running]> on host ubuntu
+[2023-07-26T00:16:33.700-0300] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='gabi' AIRFLOW_CTX_DAG_ID='LH_ED_GABRIELLEMUNIZ' AIRFLOW_CTX_TASK_ID='write_second_db' AIRFLOW_CTX_EXECUTION_DATE='2023-07-25T13:45:00+00:00' AIRFLOW_CTX_TRY_NUMBER='92' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-07-25T13:45:00+00:00'
+[2023-07-26T00:16:33.706-0300] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py", line 89, in write_second_db
+    df = pd.read_csv(file_path_csv)
+  File "/home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 912, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 577, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1407, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1661, in _make_engine
+    self.handles = get_handle(
+  File "/home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/pandas/io/common.py", line 859, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '/home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/data/csv/2023-07-19/extracted_order_csv.csv'
+[2023-07-26T00:16:33.714-0300] {taskinstance.py:1345} INFO - Marking task as UP_FOR_RETRY. dag_id=LH_ED_GABRIELLEMUNIZ, task_id=write_second_db, execution_date=20230725T134500, start_date=20230726T031633, end_date=20230726T031633
+[2023-07-26T00:16:33.733-0300] {standard_task_runner.py:104} ERROR - Failed to execute job 367 for task write_second_db ([Errno 2] No such file or directory: '/home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/data/csv/2023-07-19/extracted_order_csv.csv'; 204980)
+[2023-07-26T00:16:33.749-0300] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-07-26T00:16:33.766-0300] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

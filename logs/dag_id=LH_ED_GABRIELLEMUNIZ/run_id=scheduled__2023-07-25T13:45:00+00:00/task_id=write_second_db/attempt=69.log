@@ -1,0 +1,33 @@
+[2023-07-25T22:44:50.158-0300] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: LH_ED_GABRIELLEMUNIZ.write_second_db scheduled__2023-07-25T13:45:00+00:00 [queued]>
+[2023-07-25T22:44:50.165-0300] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: LH_ED_GABRIELLEMUNIZ.write_second_db scheduled__2023-07-25T13:45:00+00:00 [queued]>
+[2023-07-25T22:44:50.165-0300] {taskinstance.py:1308} INFO - Starting attempt 69 of 72
+[2023-07-25T22:44:50.184-0300] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): write_second_db> on 2023-07-25 13:45:00+00:00
+[2023-07-25T22:44:50.189-0300] {standard_task_runner.py:57} INFO - Started process 185707 to run task
+[2023-07-25T22:44:50.192-0300] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'LH_ED_GABRIELLEMUNIZ', 'write_second_db', 'scheduled__2023-07-25T13:45:00+00:00', '--job-id', '322', '--raw', '--subdir', 'DAGS_FOLDER/LH_ED_GABRIELLEMUNIZ.py', '--cfg-path', '/tmp/tmpethwnux1']
+[2023-07-25T22:44:50.193-0300] {standard_task_runner.py:85} INFO - Job 322: Subtask write_second_db
+[2023-07-25T22:44:50.240-0300] {task_command.py:410} INFO - Running <TaskInstance: LH_ED_GABRIELLEMUNIZ.write_second_db scheduled__2023-07-25T13:45:00+00:00 [running]> on host ubuntu
+[2023-07-25T22:44:50.327-0300] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='gabi' AIRFLOW_CTX_DAG_ID='LH_ED_GABRIELLEMUNIZ' AIRFLOW_CTX_TASK_ID='write_second_db' AIRFLOW_CTX_EXECUTION_DATE='2023-07-25T13:45:00+00:00' AIRFLOW_CTX_TRY_NUMBER='69' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-07-25T13:45:00+00:00'
+[2023-07-25T22:44:50.348-0300] {logging_mixin.py:150} WARNING - /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/utils/context.py:313 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2023-07-25T22:44:50.539-0300] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py", line 90, in write_second_db
+    df = pd.read_csv(file_path)
+  File "/home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 912, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 577, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1407, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1661, in _make_engine
+    self.handles = get_handle(
+  File "/home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/pandas/io/common.py", line 859, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '/home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/data/postgres/categories/2023-07-25/extracted_{table}_postgres.csv'
+[2023-07-25T22:44:50.548-0300] {taskinstance.py:1345} INFO - Marking task as UP_FOR_RETRY. dag_id=LH_ED_GABRIELLEMUNIZ, task_id=write_second_db, execution_date=20230725T134500, start_date=20230726T014450, end_date=20230726T014450
+[2023-07-25T22:44:50.567-0300] {standard_task_runner.py:104} ERROR - Failed to execute job 322 for task write_second_db ([Errno 2] No such file or directory: '/home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/data/postgres/categories/2023-07-25/extracted_{table}_postgres.csv'; 185707)
+[2023-07-25T22:44:50.604-0300] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-07-25T22:44:50.622-0300] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

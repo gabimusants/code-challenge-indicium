@@ -1,0 +1,14 @@
+[2023-07-25T21:14:47.227-0300] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: LH_ED_GABRIELLEMUNIZ.write_second_db scheduled__2023-07-25T13:45:00+00:00 [queued]>
+[2023-07-25T21:14:47.241-0300] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: LH_ED_GABRIELLEMUNIZ.write_second_db scheduled__2023-07-25T13:45:00+00:00 [queued]>
+[2023-07-25T21:14:47.241-0300] {taskinstance.py:1308} INFO - Starting attempt 63 of 66
+[2023-07-25T21:14:47.267-0300] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): write_second_db> on 2023-07-25 13:45:00+00:00
+[2023-07-25T21:14:47.272-0300] {standard_task_runner.py:57} INFO - Started process 163130 to run task
+[2023-07-25T21:14:47.276-0300] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'LH_ED_GABRIELLEMUNIZ', 'write_second_db', 'scheduled__2023-07-25T13:45:00+00:00', '--job-id', '308', '--raw', '--subdir', 'DAGS_FOLDER/LH_ED_GABRIELLEMUNIZ.py', '--cfg-path', '/tmp/tmpcbalp0d1']
+[2023-07-25T21:14:47.277-0300] {standard_task_runner.py:85} INFO - Job 308: Subtask write_second_db
+[2023-07-25T21:14:47.336-0300] {task_command.py:410} INFO - Running <TaskInstance: LH_ED_GABRIELLEMUNIZ.write_second_db scheduled__2023-07-25T13:45:00+00:00 [running]> on host ubuntu
+[2023-07-25T21:14:47.434-0300] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='gabi' AIRFLOW_CTX_DAG_ID='LH_ED_GABRIELLEMUNIZ' AIRFLOW_CTX_TASK_ID='write_second_db' AIRFLOW_CTX_EXECUTION_DATE='2023-07-25T13:45:00+00:00' AIRFLOW_CTX_TRY_NUMBER='63' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-07-25T13:45:00+00:00'
+[2023-07-25T21:14:47.448-0300] {logging_mixin.py:150} WARNING - /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/utils/context.py:313 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2023-07-25T21:14:47.583-0300] {python.py:183} INFO - Done. Returned value was: None
+[2023-07-25T21:14:47.590-0300] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=LH_ED_GABRIELLEMUNIZ, task_id=write_second_db, execution_date=20230725T134500, start_date=20230726T001447, end_date=20230726T001447
+[2023-07-25T21:14:47.650-0300] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-07-25T21:14:47.698-0300] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

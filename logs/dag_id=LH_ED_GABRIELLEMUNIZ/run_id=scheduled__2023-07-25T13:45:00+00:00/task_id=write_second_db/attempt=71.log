@@ -1,0 +1,23 @@
+[2023-07-25T22:46:32.159-0300] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: LH_ED_GABRIELLEMUNIZ.write_second_db scheduled__2023-07-25T13:45:00+00:00 [queued]>
+[2023-07-25T22:46:32.170-0300] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: LH_ED_GABRIELLEMUNIZ.write_second_db scheduled__2023-07-25T13:45:00+00:00 [queued]>
+[2023-07-25T22:46:32.171-0300] {taskinstance.py:1308} INFO - Starting attempt 71 of 74
+[2023-07-25T22:46:32.197-0300] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): write_second_db> on 2023-07-25 13:45:00+00:00
+[2023-07-25T22:46:32.204-0300] {standard_task_runner.py:57} INFO - Started process 186073 to run task
+[2023-07-25T22:46:32.207-0300] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'LH_ED_GABRIELLEMUNIZ', 'write_second_db', 'scheduled__2023-07-25T13:45:00+00:00', '--job-id', '325', '--raw', '--subdir', 'DAGS_FOLDER/LH_ED_GABRIELLEMUNIZ.py', '--cfg-path', '/tmp/tmpx225e9l0']
+[2023-07-25T22:46:32.208-0300] {standard_task_runner.py:85} INFO - Job 325: Subtask write_second_db
+[2023-07-25T22:46:32.259-0300] {task_command.py:410} INFO - Running <TaskInstance: LH_ED_GABRIELLEMUNIZ.write_second_db scheduled__2023-07-25T13:45:00+00:00 [running]> on host ubuntu
+[2023-07-25T22:46:32.358-0300] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='gabi' AIRFLOW_CTX_DAG_ID='LH_ED_GABRIELLEMUNIZ' AIRFLOW_CTX_TASK_ID='write_second_db' AIRFLOW_CTX_EXECUTION_DATE='2023-07-25T13:45:00+00:00' AIRFLOW_CTX_TRY_NUMBER='71' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-07-25T13:45:00+00:00'
+[2023-07-25T22:46:32.374-0300] {logging_mixin.py:150} WARNING - /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/utils/context.py:313 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2023-07-25T22:46:32.530-0300] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py", line 89, in write_second_db
+    file_path = f'/home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/data/postgres/{table}/' + db_date.strftime('%Y-%m-%d') + '/extracted_' + {table} + '_postgres.csv'
+TypeError: can only concatenate str (not "set") to str
+[2023-07-25T22:46:32.534-0300] {taskinstance.py:1345} INFO - Marking task as UP_FOR_RETRY. dag_id=LH_ED_GABRIELLEMUNIZ, task_id=write_second_db, execution_date=20230725T134500, start_date=20230726T014632, end_date=20230726T014632
+[2023-07-25T22:46:32.549-0300] {standard_task_runner.py:104} ERROR - Failed to execute job 325 for task write_second_db (can only concatenate str (not "set") to str; 186073)
+[2023-07-25T22:46:32.580-0300] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-07-25T22:46:32.599-0300] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

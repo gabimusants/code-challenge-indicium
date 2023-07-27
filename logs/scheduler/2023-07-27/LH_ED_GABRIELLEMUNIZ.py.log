@@ -1,0 +1,49 @@
+[2023-07-26T23:58:43.836-0300] {processor.py:157} INFO - Started process (PID=9466) to work on /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py
+[2023-07-26T23:58:43.837-0300] {processor.py:826} INFO - Processing file /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py for tasks to queue
+[2023-07-26T23:58:43.838-0300] {logging_mixin.py:150} INFO - [2023-07-26T23:58:43.838-0300] {dagbag.py:541} INFO - Filling up the DagBag from /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py
+[2023-07-26T23:58:44.968-0300] {processor.py:836} INFO - DAG(s) dict_keys(['LH_ED_GABRIELLEMUNIZ']) retrieved from /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py
+[2023-07-26T23:58:45.016-0300] {logging_mixin.py:150} INFO - [2023-07-26T23:58:45.015-0300] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-07-26T23:58:45.075-0300] {logging_mixin.py:150} INFO - [2023-07-26T23:58:45.074-0300] {dag.py:3504} INFO - Setting next_dagrun for LH_ED_GABRIELLEMUNIZ to 2023-07-26T03:00:00+00:00, run_after=2023-07-27T03:00:00+00:00
+[2023-07-26T23:58:45.129-0300] {processor.py:179} INFO - Processing /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py took 1.296 seconds
+[2023-07-26T23:59:39.858-0300] {processor.py:157} INFO - Started process (PID=9986) to work on /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py
+[2023-07-26T23:59:39.860-0300] {processor.py:826} INFO - Processing file /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py for tasks to queue
+[2023-07-26T23:59:39.861-0300] {logging_mixin.py:150} INFO - [2023-07-26T23:59:39.861-0300] {dagbag.py:541} INFO - Filling up the DagBag from /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py
+[2023-07-26T23:59:40.354-0300] {processor.py:836} INFO - DAG(s) dict_keys(['LH_ED_GABRIELLEMUNIZ']) retrieved from /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py
+[2023-07-26T23:59:40.371-0300] {logging_mixin.py:150} INFO - [2023-07-26T23:59:40.370-0300] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-07-26T23:59:40.398-0300] {logging_mixin.py:150} INFO - [2023-07-26T23:59:40.397-0300] {dag.py:3504} INFO - Setting next_dagrun for LH_ED_GABRIELLEMUNIZ to 2023-07-26T03:00:00+00:00, run_after=2023-07-27T03:00:00+00:00
+[2023-07-26T23:59:40.424-0300] {processor.py:179} INFO - Processing /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py took 0.571 seconds
+[2023-07-27T00:00:25.936-0300] {processor.py:157} INFO - Started process (PID=10287) to work on /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py
+[2023-07-27T00:00:25.938-0300] {processor.py:826} INFO - Processing file /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py for tasks to queue
+[2023-07-27T00:00:25.940-0300] {logging_mixin.py:150} INFO - [2023-07-27T00:00:25.939-0300] {dagbag.py:541} INFO - Filling up the DagBag from /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py
+[2023-07-27T00:00:26.313-0300] {processor.py:836} INFO - DAG(s) dict_keys(['LH_ED_GABRIELLEMUNIZ']) retrieved from /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py
+[2023-07-27T00:00:26.330-0300] {logging_mixin.py:150} INFO - [2023-07-27T00:00:26.330-0300] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-07-27T00:00:26.358-0300] {logging_mixin.py:150} INFO - [2023-07-27T00:00:26.358-0300] {dag.py:3504} INFO - Setting next_dagrun for LH_ED_GABRIELLEMUNIZ to 2023-07-26T03:00:00+00:00, run_after=2023-07-27T03:00:00+00:00
+[2023-07-27T00:00:26.386-0300] {processor.py:179} INFO - Processing /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py took 0.454 seconds
+[2023-07-27T00:01:11.796-0300] {processor.py:157} INFO - Started process (PID=10434) to work on /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py
+[2023-07-27T00:01:11.798-0300] {processor.py:826} INFO - Processing file /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py for tasks to queue
+[2023-07-27T00:01:11.799-0300] {logging_mixin.py:150} INFO - [2023-07-27T00:01:11.798-0300] {dagbag.py:541} INFO - Filling up the DagBag from /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py
+[2023-07-27T00:01:12.177-0300] {processor.py:836} INFO - DAG(s) dict_keys(['LH_ED_GABRIELLEMUNIZ']) retrieved from /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py
+[2023-07-27T00:01:12.195-0300] {logging_mixin.py:150} INFO - [2023-07-27T00:01:12.195-0300] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-07-27T00:01:12.223-0300] {logging_mixin.py:150} INFO - [2023-07-27T00:01:12.223-0300] {dag.py:3504} INFO - Setting next_dagrun for LH_ED_GABRIELLEMUNIZ to 2023-07-26T03:00:00+00:00, run_after=2023-07-27T03:00:00+00:00
+[2023-07-27T00:01:12.251-0300] {processor.py:179} INFO - Processing /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py took 0.460 seconds
+[2023-07-27T00:01:56.308-0300] {processor.py:157} INFO - Started process (PID=10560) to work on /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py
+[2023-07-27T00:01:56.310-0300] {processor.py:826} INFO - Processing file /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py for tasks to queue
+[2023-07-27T00:01:56.311-0300] {logging_mixin.py:150} INFO - [2023-07-27T00:01:56.311-0300] {dagbag.py:541} INFO - Filling up the DagBag from /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py
+[2023-07-27T00:01:56.840-0300] {processor.py:836} INFO - DAG(s) dict_keys(['LH_ED_GABRIELLEMUNIZ']) retrieved from /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py
+[2023-07-27T00:01:56.858-0300] {logging_mixin.py:150} INFO - [2023-07-27T00:01:56.857-0300] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-07-27T00:01:56.893-0300] {logging_mixin.py:150} INFO - [2023-07-27T00:01:56.893-0300] {dag.py:3504} INFO - Setting next_dagrun for LH_ED_GABRIELLEMUNIZ to 2023-07-26T03:00:00+00:00, run_after=2023-07-27T03:00:00+00:00
+[2023-07-27T00:01:56.929-0300] {processor.py:179} INFO - Processing /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py took 0.625 seconds
+[2023-07-27T00:02:39.801-0300] {processor.py:157} INFO - Started process (PID=10676) to work on /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py
+[2023-07-27T00:02:39.803-0300] {processor.py:826} INFO - Processing file /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py for tasks to queue
+[2023-07-27T00:02:39.804-0300] {logging_mixin.py:150} INFO - [2023-07-27T00:02:39.804-0300] {dagbag.py:541} INFO - Filling up the DagBag from /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py
+[2023-07-27T00:02:40.192-0300] {processor.py:836} INFO - DAG(s) dict_keys(['LH_ED_GABRIELLEMUNIZ']) retrieved from /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py
+[2023-07-27T00:02:40.214-0300] {logging_mixin.py:150} INFO - [2023-07-27T00:02:40.213-0300] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-07-27T00:02:40.246-0300] {logging_mixin.py:150} INFO - [2023-07-27T00:02:40.245-0300] {dag.py:3504} INFO - Setting next_dagrun for LH_ED_GABRIELLEMUNIZ to 2023-07-26T03:00:00+00:00, run_after=2023-07-27T03:00:00+00:00
+[2023-07-27T00:02:40.280-0300] {processor.py:179} INFO - Processing /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py took 0.484 seconds
+[2023-07-27T00:03:29.752-0300] {processor.py:157} INFO - Started process (PID=10833) to work on /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py
+[2023-07-27T00:03:29.756-0300] {processor.py:826} INFO - Processing file /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py for tasks to queue
+[2023-07-27T00:03:29.757-0300] {logging_mixin.py:150} INFO - [2023-07-27T00:03:29.757-0300] {dagbag.py:541} INFO - Filling up the DagBag from /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py
+[2023-07-27T00:03:30.401-0300] {processor.py:836} INFO - DAG(s) dict_keys(['LH_ED_GABRIELLEMUNIZ']) retrieved from /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py
+[2023-07-27T00:03:30.433-0300] {logging_mixin.py:150} INFO - [2023-07-27T00:03:30.432-0300] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-07-27T00:03:30.483-0300] {logging_mixin.py:150} INFO - [2023-07-27T00:03:30.483-0300] {dag.py:3504} INFO - Setting next_dagrun for LH_ED_GABRIELLEMUNIZ to 2023-07-26T03:00:00+00:00, run_after=2023-07-27T03:00:00+00:00
+[2023-07-27T00:03:30.534-0300] {processor.py:179} INFO - Processing /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py took 0.787 seconds

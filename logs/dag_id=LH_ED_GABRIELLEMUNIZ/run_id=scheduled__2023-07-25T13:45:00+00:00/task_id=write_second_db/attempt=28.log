@@ -1,0 +1,26 @@
+[2023-07-25T20:01:54.974-0300] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: LH_ED_GABRIELLEMUNIZ.write_second_db scheduled__2023-07-25T13:45:00+00:00 [queued]>
+[2023-07-25T20:01:54.981-0300] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: LH_ED_GABRIELLEMUNIZ.write_second_db scheduled__2023-07-25T13:45:00+00:00 [queued]>
+[2023-07-25T20:01:54.981-0300] {taskinstance.py:1308} INFO - Starting attempt 28 of 31
+[2023-07-25T20:01:55.000-0300] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): write_second_db> on 2023-07-25 13:45:00+00:00
+[2023-07-25T20:01:55.004-0300] {standard_task_runner.py:57} INFO - Started process 146673 to run task
+[2023-07-25T20:01:55.009-0300] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'LH_ED_GABRIELLEMUNIZ', 'write_second_db', 'scheduled__2023-07-25T13:45:00+00:00', '--job-id', '245', '--raw', '--subdir', 'DAGS_FOLDER/LH_ED_GABRIELLEMUNIZ.py', '--cfg-path', '/tmp/tmpfp6xvje6']
+[2023-07-25T20:01:55.009-0300] {standard_task_runner.py:85} INFO - Job 245: Subtask write_second_db
+[2023-07-25T20:01:55.055-0300] {task_command.py:410} INFO - Running <TaskInstance: LH_ED_GABRIELLEMUNIZ.write_second_db scheduled__2023-07-25T13:45:00+00:00 [running]> on host ubuntu
+[2023-07-25T20:01:55.126-0300] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='gabi' AIRFLOW_CTX_DAG_ID='LH_ED_GABRIELLEMUNIZ' AIRFLOW_CTX_TASK_ID='write_second_db' AIRFLOW_CTX_EXECUTION_DATE='2023-07-25T13:45:00+00:00' AIRFLOW_CTX_TRY_NUMBER='28' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-07-25T13:45:00+00:00'
+[2023-07-25T20:01:55.138-0300] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/dags/LH_ED_GABRIELLEMUNIZ.py", line 69, in write_second_db
+    con_db = psycopg2.connect(
+  File "/home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (127.0.0.1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+[2023-07-25T20:01:55.145-0300] {taskinstance.py:1345} INFO - Marking task as UP_FOR_RETRY. dag_id=LH_ED_GABRIELLEMUNIZ, task_id=write_second_db, execution_date=20230725T134500, start_date=20230725T230154, end_date=20230725T230155
+[2023-07-25T20:01:55.171-0300] {standard_task_runner.py:104} ERROR - Failed to execute job 245 for task write_second_db (connection to server at "localhost" (127.0.0.1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+; 146673)
+[2023-07-25T20:01:55.220-0300] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-07-25T20:01:55.251-0300] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

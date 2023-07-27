@@ -1,0 +1,55 @@
+[2023-07-26T23:59:24.245-0300] {processor.py:157} INFO - Started process (PID=9936) to work on /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2023-07-26T23:59:24.246-0300] {processor.py:826} INFO - Processing file /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2023-07-26T23:59:24.247-0300] {logging_mixin.py:150} INFO - [2023-07-26T23:59:24.247-0300] {dagbag.py:541} INFO - Filling up the DagBag from /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2023-07-26T23:59:24.253-0300] {logging_mixin.py:150} INFO - [2023-07-26T23:59:24.252-0300] {example_local_kubernetes_executor.py:39} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2023-07-26T23:59:24.253-0300] {logging_mixin.py:150} INFO - [2023-07-26T23:59:24.253-0300] {example_local_kubernetes_executor.py:40} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2023-07-26T23:59:24.253-0300] {processor.py:838} WARNING - No viable dags retrieved from /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2023-07-26T23:59:24.267-0300] {processor.py:179} INFO - Processing /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.026 seconds
+[2023-07-27T00:00:15.748-0300] {processor.py:157} INFO - Started process (PID=10251) to work on /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2023-07-27T00:00:15.750-0300] {processor.py:826} INFO - Processing file /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2023-07-27T00:00:15.752-0300] {logging_mixin.py:150} INFO - [2023-07-27T00:00:15.751-0300] {dagbag.py:541} INFO - Filling up the DagBag from /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2023-07-27T00:00:15.758-0300] {logging_mixin.py:150} INFO - [2023-07-27T00:00:15.756-0300] {example_local_kubernetes_executor.py:39} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2023-07-27T00:00:15.759-0300] {logging_mixin.py:150} INFO - [2023-07-27T00:00:15.759-0300] {example_local_kubernetes_executor.py:40} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2023-07-27T00:00:15.759-0300] {processor.py:838} WARNING - No viable dags retrieved from /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2023-07-27T00:00:15.774-0300] {processor.py:179} INFO - Processing /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.032 seconds
+[2023-07-27T00:01:08.616-0300] {processor.py:157} INFO - Started process (PID=10421) to work on /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2023-07-27T00:01:08.618-0300] {processor.py:826} INFO - Processing file /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2023-07-27T00:01:08.620-0300] {logging_mixin.py:150} INFO - [2023-07-27T00:01:08.619-0300] {dagbag.py:541} INFO - Filling up the DagBag from /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2023-07-27T00:01:08.624-0300] {logging_mixin.py:150} INFO - [2023-07-27T00:01:08.623-0300] {example_local_kubernetes_executor.py:39} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2023-07-27T00:01:08.625-0300] {logging_mixin.py:150} INFO - [2023-07-27T00:01:08.624-0300] {example_local_kubernetes_executor.py:40} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2023-07-27T00:01:08.625-0300] {processor.py:838} WARNING - No viable dags retrieved from /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2023-07-27T00:01:08.636-0300] {processor.py:179} INFO - Processing /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.024 seconds
+[2023-07-27T00:02:13.800-0300] {processor.py:157} INFO - Started process (PID=10599) to work on /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2023-07-27T00:02:13.802-0300] {processor.py:826} INFO - Processing file /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2023-07-27T00:02:13.804-0300] {logging_mixin.py:150} INFO - [2023-07-27T00:02:13.803-0300] {dagbag.py:541} INFO - Filling up the DagBag from /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2023-07-27T00:02:13.808-0300] {logging_mixin.py:150} INFO - [2023-07-27T00:02:13.807-0300] {example_local_kubernetes_executor.py:39} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2023-07-27T00:02:13.809-0300] {logging_mixin.py:150} INFO - [2023-07-27T00:02:13.809-0300] {example_local_kubernetes_executor.py:40} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2023-07-27T00:02:13.809-0300] {processor.py:838} WARNING - No viable dags retrieved from /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2023-07-27T00:02:13.823-0300] {processor.py:179} INFO - Processing /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.027 seconds
+[2023-07-27T00:03:23.680-0300] {processor.py:157} INFO - Started process (PID=10812) to work on /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2023-07-27T00:03:23.685-0300] {processor.py:826} INFO - Processing file /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2023-07-27T00:03:23.686-0300] {logging_mixin.py:150} INFO - [2023-07-27T00:03:23.686-0300] {dagbag.py:541} INFO - Filling up the DagBag from /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2023-07-27T00:03:23.691-0300] {logging_mixin.py:150} INFO - [2023-07-27T00:03:23.690-0300] {example_local_kubernetes_executor.py:39} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2023-07-27T00:03:23.691-0300] {logging_mixin.py:150} INFO - [2023-07-27T00:03:23.691-0300] {example_local_kubernetes_executor.py:40} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2023-07-27T00:03:23.691-0300] {processor.py:838} WARNING - No viable dags retrieved from /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2023-07-27T00:03:23.703-0300] {processor.py:179} INFO - Processing /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.027 seconds

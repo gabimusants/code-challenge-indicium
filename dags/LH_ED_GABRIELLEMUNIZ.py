@@ -138,8 +138,6 @@ default_args = {
 }
 
 dag_name = "LH_ED_GABRIELLEMUNIZ"
-#with DAG(dag_name, default_args = default_args, schedule = "58 * * * *", 
-#		  start_date = datetime(2023, 1, 1), catchup = False) as dag:
 
 with DAG(dag_name, default_args = default_args, schedule = "@daily", 
 		  start_date = datetime(2023, 1, 1), catchup = False) as dag:

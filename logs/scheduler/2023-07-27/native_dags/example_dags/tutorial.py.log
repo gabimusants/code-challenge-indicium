@@ -47,3 +47,10 @@
 [2023-07-27T00:03:32.545-0300] {logging_mixin.py:150} INFO - [2023-07-27T00:03:32.545-0300] {dag.py:2742} INFO - Sync 1 DAGs
 [2023-07-27T00:03:32.570-0300] {logging_mixin.py:150} INFO - [2023-07-27T00:03:32.569-0300] {dag.py:3504} INFO - Setting next_dagrun for tutorial to 2023-07-26T03:03:32.569535+00:00, run_after=2023-07-27T03:03:32.569535+00:00
 [2023-07-27T00:03:32.596-0300] {processor.py:179} INFO - Processing /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.089 seconds
+[2023-07-27T20:29:51.425-0300] {processor.py:157} INFO - Started process (PID=13347) to work on /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2023-07-27T20:29:51.427-0300] {processor.py:826} INFO - Processing file /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2023-07-27T20:29:51.428-0300] {logging_mixin.py:150} INFO - [2023-07-27T20:29:51.427-0300] {dagbag.py:541} INFO - Filling up the DagBag from /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2023-07-27T20:29:51.446-0300] {processor.py:836} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2023-07-27T20:29:51.587-0300] {logging_mixin.py:150} INFO - [2023-07-27T20:29:51.587-0300] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-07-27T20:29:51.617-0300] {logging_mixin.py:150} INFO - [2023-07-27T20:29:51.617-0300] {dag.py:3504} INFO - Setting next_dagrun for tutorial to 2023-07-26T23:29:51.616669+00:00, run_after=2023-07-27T23:29:51.616669+00:00
+[2023-07-27T20:29:51.655-0300] {processor.py:179} INFO - Processing /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.234 seconds

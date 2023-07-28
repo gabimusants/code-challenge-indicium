@@ -40,3 +40,10 @@
 [2023-07-27T00:03:17.759-0300] {logging_mixin.py:150} INFO - [2023-07-27T00:03:17.759-0300] {dag.py:2742} INFO - Sync 1 DAGs
 [2023-07-27T00:03:17.782-0300] {logging_mixin.py:150} INFO - [2023-07-27T00:03:17.782-0300] {dag.py:3504} INFO - Setting next_dagrun for example_skip_dag to 2023-07-26T03:03:17.782198+00:00, run_after=2023-07-27T03:03:17.782198+00:00
 [2023-07-27T00:03:17.809-0300] {processor.py:179} INFO - Processing /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py took 0.092 seconds
+[2023-07-27T20:30:17.417-0300] {processor.py:157} INFO - Started process (PID=13429) to work on /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py
+[2023-07-27T20:30:17.422-0300] {processor.py:826} INFO - Processing file /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2023-07-27T20:30:17.423-0300] {logging_mixin.py:150} INFO - [2023-07-27T20:30:17.423-0300] {dagbag.py:541} INFO - Filling up the DagBag from /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py
+[2023-07-27T20:30:17.435-0300] {processor.py:836} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py
+[2023-07-27T20:30:17.460-0300] {logging_mixin.py:150} INFO - [2023-07-27T20:30:17.459-0300] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-07-27T20:30:17.485-0300] {logging_mixin.py:150} INFO - [2023-07-27T20:30:17.485-0300] {dag.py:3504} INFO - Setting next_dagrun for example_skip_dag to 2023-07-26T23:30:17.485259+00:00, run_after=2023-07-27T23:30:17.485259+00:00
+[2023-07-27T20:30:17.516-0300] {processor.py:179} INFO - Processing /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py took 0.103 seconds

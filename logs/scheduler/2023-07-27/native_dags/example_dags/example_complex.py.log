@@ -33,3 +33,10 @@
 [2023-07-27T00:03:20.571-0300] {logging_mixin.py:150} INFO - [2023-07-27T00:03:20.570-0300] {dag.py:2742} INFO - Sync 1 DAGs
 [2023-07-27T00:03:20.594-0300] {logging_mixin.py:150} INFO - [2023-07-27T00:03:20.593-0300] {dag.py:3504} INFO - Setting next_dagrun for example_complex to None, run_after=None
 [2023-07-27T00:03:20.622-0300] {processor.py:179} INFO - Processing /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.110 seconds
+[2023-07-27T20:30:25.580-0300] {processor.py:157} INFO - Started process (PID=13452) to work on /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2023-07-27T20:30:25.583-0300] {processor.py:826} INFO - Processing file /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2023-07-27T20:30:25.584-0300] {logging_mixin.py:150} INFO - [2023-07-27T20:30:25.584-0300] {dagbag.py:541} INFO - Filling up the DagBag from /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2023-07-27T20:30:25.616-0300] {processor.py:836} INFO - DAG(s) dict_keys(['example_complex']) retrieved from /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2023-07-27T20:30:25.685-0300] {logging_mixin.py:150} INFO - [2023-07-27T20:30:25.684-0300] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-07-27T20:30:25.733-0300] {logging_mixin.py:150} INFO - [2023-07-27T20:30:25.733-0300] {dag.py:3504} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2023-07-27T20:30:25.772-0300] {processor.py:179} INFO - Processing /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.198 seconds

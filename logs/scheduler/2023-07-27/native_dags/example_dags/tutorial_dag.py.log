@@ -47,3 +47,10 @@
 [2023-07-27T00:03:31.254-0300] {logging_mixin.py:150} INFO - [2023-07-27T00:03:31.254-0300] {dag.py:2742} INFO - Sync 1 DAGs
 [2023-07-27T00:03:31.292-0300] {logging_mixin.py:150} INFO - [2023-07-27T00:03:31.292-0300] {dag.py:3504} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
 [2023-07-27T00:03:31.329-0300] {processor.py:179} INFO - Processing /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py took 0.133 seconds
+[2023-07-27T20:29:49.954-0300] {processor.py:157} INFO - Started process (PID=13304) to work on /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-07-27T20:29:49.959-0300] {processor.py:826} INFO - Processing file /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2023-07-27T20:29:49.963-0300] {logging_mixin.py:150} INFO - [2023-07-27T20:29:49.960-0300] {dagbag.py:541} INFO - Filling up the DagBag from /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-07-27T20:29:49.982-0300] {processor.py:836} INFO - DAG(s) dict_keys(['tutorial_dag']) retrieved from /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-07-27T20:29:50.204-0300] {logging_mixin.py:150} INFO - [2023-07-27T20:29:50.204-0300] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-07-27T20:29:50.243-0300] {logging_mixin.py:150} INFO - [2023-07-27T20:29:50.242-0300] {dag.py:3504} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2023-07-27T20:29:50.289-0300] {processor.py:179} INFO - Processing /home/gabi/Documentos/Gabi/Indicium/code-challenge-indicium/ind_env/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py took 0.345 seconds

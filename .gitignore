@@ -1,6 +1,6 @@
 /dbdata
 /dbdata_new
-airflow.cfg
-airflow.db
-webserver_config.py
+/airflow.cfg
+/airflow.db
+/webserver_config.py
 .env
